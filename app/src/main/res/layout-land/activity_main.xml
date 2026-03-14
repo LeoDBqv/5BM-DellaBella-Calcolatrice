@@ -29,58 +29,65 @@
         android:id="@+id/log10"
         android:layout_width="155dp"
         android:layout_height="55dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="16dp"
         android:text="log10(x)"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="257dp" />
+        app:layout_constraintBottom_toTopOf="@+id/potenza"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/t0"
         android:layout_width="70dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
         android:text="0"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/t9"
-        tools:layout_editor_absoluteY="257dp" />
+        app:layout_constraintBottom_toTopOf="@+id/potenza"
+        app:layout_constraintStart_toEndOf="@+id/t9" />
 
     <Button
         android:id="@+id/reciproco"
         android:layout_width="125dp"
         android:layout_height="55dp"
+        android:layout_marginStart="18dp"
         android:text="1/x"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="325dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/potenza"
+        app:layout_constraintStart_toEndOf="@+id/potenza" />
 
     <Button
         android:id="@+id/t7"
         android:layout_width="70dp"
         android:layout_height="55dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="16dp"
         android:text="7"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/log10"
-        tools:layout_editor_absoluteY="257dp" />
+        app:layout_constraintBottom_toTopOf="@+id/potenza"
+        app:layout_constraintStart_toEndOf="@+id/log10" />
 
     <Button
         android:id="@+id/t9"
         android:layout_width="70dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
         android:text="9"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/t8"
-        tools:layout_editor_absoluteY="257dp" />
+        app:layout_constraintBottom_toTopOf="@+id/potenza"
+        app:layout_constraintStart_toEndOf="@+id/t8" />
 
     <Button
         android:id="@+id/radice"
         android:layout_width="125dp"
         android:layout_height="55dp"
+        android:layout_marginStart="18dp"
         android:text="√x"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="360dp"
-        tools:layout_editor_absoluteY="325dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/potenza"
+        app:layout_constraintStart_toEndOf="@+id/reciproco" />
 
     <Button
         android:id="@+id/uguale"
@@ -89,36 +96,40 @@
         android:layout_marginStart="16dp"
         android:text="="
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/t0"
-        tools:layout_editor_absoluteY="257dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/potenza"
+        app:layout_constraintStart_toEndOf="@+id/t0" />
 
     <Button
         android:id="@+id/potenza"
         android:layout_width="125dp"
         android:layout_height="55dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="28dp"
         android:text="x^y"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="326dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/t8"
         android:layout_width="70dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
         android:text="8"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/t7"
-        tools:layout_editor_absoluteY="257dp" />
+        app:layout_constraintBottom_toTopOf="@+id/potenza"
+        app:layout_constraintStart_toEndOf="@+id/t7" />
 
     <Button
         android:id="@+id/punto"
         android:layout_width="70dp"
         android:layout_height="55dp"
+        android:layout_marginStart="16dp"
         android:text="."
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="503dp"
-        tools:layout_editor_absoluteY="325dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/potenza"
+        app:layout_constraintStart_toEndOf="@+id/radice" />
 
     <Button
         android:id="@+id/t4"
@@ -190,11 +201,12 @@
         android:id="@+id/canc"
         android:layout_width="70dp"
         android:layout_height="55dp"
+        android:layout_marginStart="68dp"
         android:layout_marginBottom="16dp"
         android:text="C"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/log10"
-        tools:layout_editor_absoluteX="70dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/diviso"
